@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assignment 2</title>
+  <style>
+    body {
+      margin: 60px;
+      font-family: sans-serif;
+      background-color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: white;
+    }
+
+    span {
+      color: #f80063;
+    }
+
+    .btn {
+      background-color: #f80063;
+      color: white;
+      font-weight: bold;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      width:fit;
+      cursor: pointer;
+      animation: bg 1s infinite;
+    }
+
+    @keyframes bg {
+      0%, 100% { box-shadow: 0 0 5px #f80063; }
+      50% { box-shadow: 0 0 15px #f80063; }
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgb(189, 141, 149);
+    }
+
+    .section1 {
+      background: linear-gradient(to right, rgba(127,172,193,0.45), rgba(39,196,220,0.35)), 
+                  url('https://demo.themenio.com/genox/images/banner-a.jpg');
+      background-size: cover;
+      height: 100vh;
+     
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 50px;
+      opacity: 0.9;
+
+    }
+
+    h1 {
+      color: white;
+      font-size: 50px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .section1 p {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    
+.section1 .btn{
+    padding:5px 10px;
+    width:200px;
+}
+    .strong {
+      display: block;
+      color: black;
+      font-size: 30px;
+      margin: 10px 0;
+    }
+
+    .section2{
+      display: flex;
+    margin-bottom: 20px;
+      padding: 20px 90px;
+      background-color:rgb(222, 253, 255);
+      justify-content: space-around;
+    }
+   .section2 .img{
+      display: flex;
+      gap: 20px;
+    }
+
+    .section2 .img img {
+      width: fit;
+      height: 170px;
+     
+    }
+    .section3{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px ;
+      background-color: rgb(224, 239, 240);
+    }
+    .section3 form {
+      width: 400px;
+      gap:10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .section3 h3{
+      text-align: center;
+    }
+.section3 input {
+      padding: 10px 20px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+ .section3 textarea{
+  padding:40px 20px;
+   margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+ }
+ footer .black{
+  background-color: black;
+  display:flex;
+  color:white;
+  padding: 20px 30px;
+  height:30vh;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  
+}footer .black h3 {
+  color:white;
+  text-decoration: none;
+
+}
+footer form input {
+  background-color: transparent ;
+  padding:10px;
+}  
+.company:hover, .services:hover, .email:hover {
+  text-decoration: underline;
+  color:#f80063;
+animation: slow 1.5s infinity;
+  margin: 0 20px;
+}
+  @keyframes slow {
+    0% { color: white; }
+    50% { color: #f80063; }
+    100% { color: white; }
+  }
+  .footer{
+    font-size:19.5px;
+    background-color: transparent;
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2><strong>GEN<span>OX</span></strong></h2>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">PAGES</a>
+      <a href="#">WORKS</a>
+      <a href="#">BLOG</a>
+      <a href="#">BLOCKS</a>
+      <button class="btn" onclick="showbutton()">START A PROJECT</button>
+      <script>
+       function showbutton(){
+        alert("sorry for inconvenience, this button is not functional yet.");
+       }
+      </script>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section1">
+      <h1><strong>Crafting Digital<br>Experience to<br>help Brands <span>GROW</span></strong></h1>
+      <p>The digital agency with a human approach</p>
+      <button class="btn" onclick="showbutton()">CHECK OUT OUR WORK</button>
+      <script>
+        function showbutton(){
+          alert("Thank you for your interest! We will get back to you soon.");
+        }
+      </script>
+    </section><br><br>
+    <section class="section2">
+<div class="text"><h5>MEET THE TEAM</h5>
+<p><strong>People of behind work</strong></p>
+<p>We're  always expanding hard working creators</p><br>
+<button class="btn">MEET ALL TEAM</button></div>
+<div class="img">
+<img src="https://demo.themenio.com/genox/images/team-a.jpg">
+<img src="https://demo.themenio.com/genox/images/team-b.jpg">
+<img src="https://demo.themenio.com/genox/images/team-c.jpg">
+</div>
+    </section>
+    <section class="section3">
+     <div class="white">
+       <form >
+        <h3>Get in Touch</h3>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn" onclick="shobutton()">Send Message</button>
+        <script>
+          function shobutton(){
+            alert("Thank you for your message! We will get back to you soon.");
+          }
+        </script>
+      </form>
+     </div>
+    
+    </section>
+  </main>
+ 
+ <footer>
+
+ 
+  <div class="black">
+    <div class="x">
+      <h3><span>X</span></h3><p>&copy;2019 All rights reserved.<br>Designed & Developed By Softnio</h3>
+    </div>
+    <div class="company">
+      <h3 class="comp">
+      Company
+    </h3>
+  About us<br><br>  Why Genox?<br>  <br> Meet the team</div>
+    <div class="services"><h3 class="comp">Services</h3>
+    Digital Media<br> <br> Strategy<br> <br> Development</div>
+    <div class="email"><H3>Get our Staff</H3>
+    <form >
+      <input type="email" placeholder="Your email" required>
+      <button type="submit" class="footer" >😁</button>  
+    </form></div>
+  </div>
+ </footer>
+
+</body>
+</html>
